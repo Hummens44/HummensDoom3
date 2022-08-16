@@ -179,7 +179,7 @@ entityDef projectile_plasmablast {
 	"contact_friction"			"0"
 	"bounce"					"0.6"				// how much speed a projectile retains when it bounces off of objects (coefficient of restitution).  0 means no bounce.
 	"mass"						"50"
-	"push"						"4000"				// additional impulse when projectile collides
+	"push"						"50"				// additional impulse when projectile collides
 	"gravity"					"0"					// how much gravity affects the trajectory.  gravity direction is same as the entity that fired it.
 	"fuse"						"10"				// how long before the projectile is removed or self-detonates.  Use 0 for beam weapons (velocity == distance).
 
@@ -204,12 +204,12 @@ entityDef projectile_plasmablast {
 
 //	"mtr_light_shader"			""
 //	"light_color"				"0 0 0.8"
-//	"light_radius"				"160"
+//	"light_radius"				"250"
 //	"light_offset"				"-8 0 0"
 
 //	"mtr_explode_light_shader"	"muzzleflash"
 //	"explode_light_color"		"0 0 1"
-//	"explode_light_radius"		"160"
+//	"explode_light_radius"		"300"
 //	"explode_light_fadetime"	"0.25"
 
 	"snd_fly"					"plasma_flight"					// sound effect while in the air
