@@ -1,0 +1,205 @@
+>Feedback
+All damage feedback needs toning down, particularly with regards to screen shake. It's just too egregious.
+
+>>Mancubus
+Damage - increase/decrease? To test
+Movement speeds - increase? To test
+
+>>Imps
+Faster movement
+Projectiles have less of an arc / more direct aim, faster
+
+>>zSec
+No changes currently? Shotgunners are pretty lethal. Damage knock-back is too aggressive for player at present.
+
+>>revenants
+Faster projectiles
+Faster movement
+More HP
+
+>>Hell Knight
+Faster movement - but not too much as already quite imposing due to size and relative close-quarters of most encounters.
+Projectiles have less of an arc / more direct aim, faster 
+
+>>Weapons
+
+>Plasma fire speed - high
+Plasma damage - lower
+
+>Pistol accuracy - higher
+Pistol damage - average
+
+>Shotgun spread - lower
+Shotgun damage - high
+
+>Machinegun spread - higher
+Machinegun damage - lower
+
+>Chaingun spread - higher
+Changun damage - same?
+
+>Grenade bounce - much lower
+
+>Rocketlauncher - slower rockets
+
+>BFG - faster projectile
+
+>>Archvile
+Increase health significantly
+
+>>Shotgun
+	"clipSize"					"8"
+// -1 = infinite clipsize ie: just firing+cocking animation without loading clip
+
+	"spread"					"3"
+// Keep low to make the shotgun viable again
+
+	"damage"			"10"
+// experiment to see what works best without making OP
+
+	"gib"				"0"
+// stop it from shredding everything, which has the effect of making it feel less weighty - let the bodies fly back with some impact
+
+	"velocity"					"7200 0 0"	// .38 Special 600 fps.  Source: Petzal, David E. "How fast is a speeding bullet." Field and Stream. 97 (1992): 23
+// experiment to see what looks good
+
+>>plasmagun
+
+	"damage"					"25"
+// experiment to make feel impactful.
+
+	"velocity"					"2000 0 0"			// how fast the projectile leaves the gun (or distance if fuse is 0)
+
+// experiment - high speed to mimic OG plasma projectiles
+
+	"push"						"4000"				// additional impulse when projectile collides
+// can't remember if this was altered or not - reduce it? maybe what is making ragdolls go berzerk
+
+	"clipSize"					"50"
+//increase to 100 if rate of fire increased -if ROF increased, lower damage per shot
+
+	"smoke_fly"					"plasmatrail.prt"	// particle effect while in the air
+// can this be altered to leave more of a trail?
+
+>>pistol
+
+	"spread"					"0"
+// change to 3
+
+	"damage"			"18"
+// experiment with value, not too strong but a viable fallback if you run out of shells, early-game
+
+	"velocity"					"7200 0 0"	// .38 Special 600 fps.  Source: Petzal, David E. "How fast is a speeding bullet." Field and Stream. 97 (1992): 23
+
+// experiment with what looks good based on this quote
+
+	"impact_gib"				"1"
+// no gibbing, set to "0"
+
+>>Machinegun
+
+	"clipSize"					"60"
+// make it 30
+
+	"spread"					"2"
+// make it 8+, experiment - it's not a sniper rifle. A close to medium range weapon.
+
+	"damage"			"12"
+// pistol is set to "18" - should be comparable either way.
+
+	"knockback"			"2"
+// is this relative to view kickback? Should be relative to spread.
+
+	"kick_time"			"400"
+// experiment with what feels good
+
+	"impact_gib"				"1"
+// no gibbing
+
+
+>>fists
+
+	"clipSize"					"0"
+// does "0" value mean infinite firing for other weapons? try "0" on shotgun to find out. Ideally, no more reloading on SG or pistol. Rapid fire weapons - maybe? Maybe take it off of all of them. May make it too easy though.
+
+>>player
+
+	mesh								models/md5/characters/npcs/playermoves/spplayer.md5mesh
+// alternate player model? generic doom marine/mp model?
+
+"pm_jumpheight"						"60"
+	"pm_stepsize"						"16"
+	"pm_crouchspeed"					"150"
+	"pm_walkspeed"						"300"
+	"pm_runspeed"						"400"
+	"pm_noclipspeed"					"200"
+	"pm_minviewpitch"					"-89"	// looking up
+	"pm_maxviewpitch"					"89"	// looking down
+	"pm_stamina"						"24"
+	"pm_staminathreshold"				"4"
+	"pm_staminarate"					"0.75"
+	"pm_crouchheight"					"38"
+	"pm_crouchviewheight"				"32"
+
+	"pm_normalheight"					"74"
+	"pm_normalviewheight"				"68"
+	"pm_deadheight"						"20"
+	"pm_deadviewheight"					"10"
+	"pm_crouchrate"						"0.87"
+	"pm_bboxwidth"						"32"
+	"pm_crouchbob"						"0.1"		// ducked characters bob much faster
+	"pm_walkbob"						"0.4"		// walking bobs slow
+	"pm_runbob"							"0.6"		// faster speeds bob faster
+	"pm_modelview"						"0"			// 0 == normal, 1 == view inside model, 2 == view inside model when dead
+	"pain_delay"						"0.5"		// how long to wait before playing pain sound
+	"respawn_delay"						"1.7"		// minimum delay for respawning after death
+
+// key values for movement feel. Aiming for Quake1 style physics, fast-paced and a bit rubbery, more responsive. These are currently set to preferred values for the most part, but some more could be trialled. Currently based largely on OG Quake player movement speed values. Increased crouchrate for example could feel less awkward/snappy. pm_stamina to be disabled/infinite? pm_staminarate? pm_staminathreshold? how are these affected
+
+// stats
+	"health"							"100"
+	"maxhealth"							"100"
+	"stamina"							"120"
+	"armor"								"0"
+	"maxarmor"							"125"
+	
+// alter to mirror OG Doom stats ie: 200 health 200 armo(u)r? increase max health if increasing enemy damage stats also - but balance and check aginst abundance of health/armour pickups and wall units. For later on consideration after physics/movement gameplay locked down. Game should be more challenging with the alterations, not easier.
+	
+>>zombie_commando_cgun
+
+increase spread and cone
+
+>>>>zombie_commando
+
+>>lost-soul
+
+lower the knockback effect dramatically as it is *very* annoying. increase health to compensate difficulty when dealing with swarms, encourage player movement when engaging rather than just spamming plasma as your view gets knocked around wildly.
+
+>>Cacodemon
+
+increase health, maybe speed a little. At default, like shooting a floating baked potato, not very intimidating. Re-enable the corpse burn effect as they are bulky corpses.
+
+>>wraith
+
+increase health. Not sure what to do about these as they are not very formidable oncee you get their pattern down, particularly with new shotgun physics - wait for them to start reappearing and usually one good shotgun hit to the head deals with them before they've even finished appearing.
+
+>>revenant
+
+increase health, projectile speed and movement speed. Much too slow and easy to engage at default settings. Speed up those homing rockets, make cover important. OG Doom 2 movement speed is crazy compared to how they move at default values in Doom 3. They never get close enough to start slapping you around - see if that can be changed.
+
+>>pinky
+
+increase health. Reinstate burnaway effect as their corpses are massive and block combat when there's anything else trying to get at you. Already a decent speed but they only appear a handful of times and only a few times are there more than one to provide much of a threat. With new SG spread and damage, they're easy to dispatch - so increase health to counter this, given their low frequency in game.
+
+>>spider-mini boss
+burnaway to be set
+
+>>trites
+
+burnaway to be re-set, at present they tend to pile up due to the volume of them in encounters. They bounce around like crazy too which looks rather strange. They should go pop. That damage feedback though needs toning way down.
+
+>>monster speeds
+is monster movement tied to animation? how can this be altered? External tools or other .def files to be looked at?
+
+>>further tools
+What Doom 3 dev tools are there except for the built-in editor? Is it worth recreating a Doom map in Doom 3 (or using one someone else has made) to test out of the mechanics? Or a Quake 1 map for that matter? E1M1 in either case.
