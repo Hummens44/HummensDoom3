@@ -780,19 +780,19 @@ entityDef player_base {
 	"pm_walkspeed"						"300"
 	"pm_runspeed"						"400"
 	"pm_noclipspeed"					"200"
-	"pm_minviewpitch"					"-89"	// looking up
-	"pm_maxviewpitch"					"89"	// looking down
+	"pm_minviewpitch"					"-95"	// looking up
+	"pm_maxviewpitch"					"95"	// looking down
 	"pm_stamina"						"24"
 	"pm_staminathreshold"				"4"
-	"pm_staminarate"					"0.75"
+	"pm_staminarate"					"0"
 	"pm_crouchheight"					"38"
 	"pm_crouchviewheight"				"32"
 
 	"pm_normalheight"					"74"
 	"pm_normalviewheight"				"68"
-	"pm_deadheight"						"20"
-	"pm_deadviewheight"					"10"
-	"pm_crouchrate"						"0.87"
+	"pm_deadheight"						"2"
+	"pm_deadviewheight"					"2"
+	"pm_crouchrate"						"0.25"
 	"pm_bboxwidth"						"32"
 	"pm_crouchbob"						"0.1"		// ducked characters bob much faster
 	"pm_walkbob"						"0.4"		// walking bobs slow
@@ -803,10 +803,10 @@ entityDef player_base {
 
 	// stats
 	"health"							"100"
-	"maxhealth"							"100"
+	"maxhealth"							"200"
 	"stamina"							"120"
 	"armor"								"0"
-	"maxarmor"							"125"
+	"maxarmor"							"200"
 
 	// ammo
 	"ammo_shells"						"0"
