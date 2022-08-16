@@ -12,7 +12,7 @@ Projectiles have less of an arc / more direct aim, faster
 >>zSec
 No changes currently? Shotgunners are pretty lethal. Damage knock-back is too aggressive for player at present.
 
->>revenants
+>>Revenants
 Faster projectiles
 Faster movement
 More HP
