@@ -508,7 +508,7 @@ entityDef projectile_bullet_zsec_pistol {
 
 	"launchFromBarrel"				"0"
 	"health"						"0"
-	"velocity"						"2000 0 0"	// slowed down for tracer effect
+	"velocity"						"600 0 0"	// slowed down for tracer effect
 	"angular_velocity"				"0 0 0"
 	"thrust"						"0"
 	"thrust_start"					"0"
