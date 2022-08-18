@@ -62,8 +62,8 @@ entityDef weapon_shotgun {
 	"def_projectile"			"projectile_bullet_shotgun"
 	"ammoType"					"ammo_shells"
 	"ammoRequired"				"1"
-	"clipSize"					"0"
-	"lowAmmo"					"0"
+	"clipSize"					"8"
+	"lowAmmo"					"2"
 	"mtr_flashShader"			"muzzleflash"
 	"flashColor"				"1 0.8 0.4"
 	"flashRadius"				"120"
@@ -238,7 +238,7 @@ entityDef projectile_bullet_shotgun {
 
 	"launchFromBarrel"			"0"
 	"health"					"0"
-	"velocity"					"550 0 0"	// .38 Special 600 fps.  Source: Petzal, David E. "How fast is a speeding bullet." Field and Stream. 97 (1992): 23
+	"velocity"					"1000 0 0"	// .38 Special 600 fps.  Source: Petzal, David E. "How fast is a speeding bullet." Field and Stream. 97 (1992): 23
 	"angular_velocity"			"0 0 0"
 	"thrust"					"0"
 	"thrust_start"				"0"
