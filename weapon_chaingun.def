@@ -55,7 +55,7 @@ entityDef weapon_chaingun {
 	"def_projectile"			"projectile_chaingunbullet"
 	"ammoType"					"ammo_belt"
 	"ammoRequired"				"1"
-	"clipSize"					"0"
+	"clipSize"					"60"
 	"lowAmmo"					"10"
 	"mtr_flashShader"			"muzzleflash"
 	"flashColor"				"1 0.8 0.4"
@@ -155,7 +155,7 @@ entityDef projectile_chaingunbullet {
 								
 	"launchFromBarrel"			"1"
 	"health"					"0"
-	"velocity"					"1200 0 0"	// .38 Special 600 fps.  Source: Petzal, David E. "How fast is a speeding bullet." Field and Stream. 97 (1992): 23
+	"velocity"					"1500 0 0"	// .38 Special 600 fps.  Source: Petzal, David E. "How fast is a speeding bullet." Field and Stream. 97 (1992): 23
 	"angular_velocity"			"0 0 0"
 	"thrust"					"0"
 	"thrust_start"				"0"
