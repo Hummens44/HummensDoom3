@@ -179,7 +179,7 @@ entityDef projectile_bullet_machinegun {
 
 	"launchFromBarrel"			"0"
 	"health"					"0"
-	"velocity"					"7200 0 0"	// .38 Special 600 fps.  Source: Petzal, David E. "How fast is a speeding bullet." Field and Stream. 97 (1992): 23
+	"velocity"					"1000 0 0"	// .38 Special 600 fps.  Source: Petzal, David E. "How fast is a speeding bullet." Field and Stream. 97 (1992): 23
 	"angular_velocity"			"0 0 0"
 	"thrust"					"0"
 	"thrust_start"				"0"
